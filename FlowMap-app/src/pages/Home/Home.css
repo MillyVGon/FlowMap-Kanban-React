@@ -1,0 +1,151 @@
+.presentation {
+  display: flex;
+  align-items: center;
+  height: 550px;
+  background: linear-gradient(75deg, #FF7327, #FF7327 50%, #4a87b9 40%, #4a87b9);
+  margin: 0 20px;
+}
+
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 30px;
+  padding: 25px;
+  color: #ffffff;
+}
+
+.title-presentation {
+  font-size: 2.6rem;
+  text-align: center;
+  transition: .2s;
+}
+
+.description-presentation {
+  font-size: 1.59rem;
+  text-align: center;
+  font-style: italic;
+  transition: .2s;
+}
+
+.title-presentation:hover {
+  font-size: 2.65rem;
+}
+
+.description-presentation:hover {
+  font-size: 1.61rem;
+}
+
+.img-presentation {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-left: 60px;
+
+    & img {
+      max-height: 455px;
+      padding: 5px;
+      transition: .3s;
+    }
+
+    & img:hover {
+      padding: 0;
+      box-shadow: 0px 0px 20px #0000002e;
+    }
+}
+
+.info {
+  color: #131126;
+  text-align: center;
+  padding: 0 80px;
+
+  & img {
+    width: 75vw;
+    max-width: 600px;
+  }
+}
+
+.title-info {
+  margin: 15px 0;
+  font-size: 2rem;
+}
+
+.description-info {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px){
+  .presentation {
+    flex-direction: column;
+    height: 1010px;
+    background: linear-gradient(45deg, #FF7327, #FF7327 50%, #4a87b9 40%, #4a87b9);
+  }
+
+  .presentation-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .img-presentation { 
+    padding-left: 0px;
+
+    & img {
+      height: 80vw;
+      max-height: 650px;
+    }
+
+  }
+
+  .info {
+    padding: 0 30px;
+
+    & img {
+      max-width: 400px;
+    }
+  }
+
+  .title-info {
+    font-size: 1.6rem;
+    }
+
+  .description-info {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px){
+  .presentation {
+    height: 680px;
+  }
+
+  .title-presentation {
+    font-size: 1.5rem;
+  }
+
+  .description-presentation {
+    font-size: 1.1rem;
+  }
+
+  .title-presentation:hover {
+    font-size: 1.55rem;
+    text-shadow: 0px 0px 20px #00000036;
+  }
+
+  .description-presentation:hover {
+    font-size: 1.12rem;
+    text-shadow: 0px 0px 20px #00000036;
+  }
+
+  .info {
+    padding: 0 20px;
+  }
+
+  .title-info {
+    font-size: 1.1rem;
+  }
+
+  .description-info {
+    font-size: 0.8rem;
+  }
+}

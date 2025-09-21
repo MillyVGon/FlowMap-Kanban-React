@@ -1,0 +1,92 @@
+.text-signature_content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 20px 30px;
+}
+
+.title-signature_content {
+    font-size: 2rem;
+    color: #0b1526;
+}
+
+.description-signature_content {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: #0b1526;
+
+    & span {
+        color: #056b05;
+        font-weight: 600;
+        transition: .1s;
+    }
+
+    & span:hover {
+        font-weight: 800;
+    }
+}
+
+.cards-signature_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-signature {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #ffffff7a;
+    box-shadow: 4px 4px 15px #00000035;
+    border-radius: 20px;
+    min-width: 300px;
+    gap: 15px;
+    padding: 25px;
+    transition: .3s;
+
+    & h2 {
+        color: #000;
+        font-size: 1.3rem;
+    }
+}
+
+.card-signature:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 8px 20px #0000003d;
+}
+
+.price-signature {
+    font-size: 2rem;
+    color: #056b05;
+}
+
+.benefits-signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+
+    & p {
+        font-size: 1.1rem;
+        color: #000000a9;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-signature_content {
+        padding: 20px;
+    }
+
+    .title-signature_content {
+        font-size: 1.5rem;
+        color: #0b1526;
+    }
+
+    .description-signature_content {
+        font-size: 1.1rem;
+    }
+}

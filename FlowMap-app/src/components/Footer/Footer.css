@@ -1,0 +1,20 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #35424a;
+    padding: 1.2rem;
+    gap: 15px;
+    margin-top: 20px;
+
+    & p {
+        font-size: 1rem;
+        color: #fff;
+    }
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 10px;
+}

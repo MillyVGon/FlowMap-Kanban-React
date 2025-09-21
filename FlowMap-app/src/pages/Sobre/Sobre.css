@@ -1,0 +1,154 @@
+.sobre {
+    display: flex;
+    gap: 130px;
+    padding: 30px;
+}
+
+.sobre-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-sobre {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0b1526;
+}
+
+.description-sobre {
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: justify;
+    color: #0b1526;
+
+    & span {
+        font-weight: 800;
+    }
+}
+
+.img-sobre {
+    display: flex;
+    justify-content: center;
+
+    & img {
+        width: 25vw;
+        max-width: 225px;
+        padding: 5px;
+        margin: 0 150px;
+        transition: .3s;
+    }
+
+    & img:hover {
+        padding: 0;
+    }
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 0px 40px;
+}
+
+.mission-container {
+    display: flex;
+    gap: 30px;
+}
+
+.title-mission {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-decoration: underline;
+    color: #0b1526;
+}
+
+.description-mission {
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: justify;
+    color: #0b1526;
+    background-color: #0000000a;
+    padding: 20px;
+    box-shadow: 0px 4px 10px #0000001d;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.description-mission:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px #00000033;
+}
+
+@media (max-width: 1200px) {
+    .sobre {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 20px;
+    }
+
+    .sobre-container {
+        background-color: transparent;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    .sobre-container:hover {
+        transform: translateY(0px);
+        box-shadow: none;
+    }
+
+    .description-sobre {
+        background-color: #ffffff7e;
+        padding: 10px;
+        box-shadow: 0px 4px 10px #0000001d;
+        border-radius: 10px;
+        transition: .3s;
+    }
+
+    .description-sobre:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 10px #00000033;
+    }
+    
+    .img-sobre img {
+        min-width: 150px;
+        margin: 0;
+    }
+
+    .mission {
+        padding: 20px;
+        border-top: 1px solid #00000036;
+    }
+
+    .mission-container {
+        flex-direction: column;
+        gap: 0px;
+        background-color: #0000000a;
+        padding: 5px;
+        box-shadow: 0px 4px 10px #0000001d;
+        border-radius: 10px;
+        transition: .2s;
+    }
+
+    .mission-container:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 10px #00000033;
+    }
+
+    .title-mission {
+        text-decoration: none;
+    }
+
+    .description-mission {
+        padding: 10px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .description-mission:hover {
+        transform: translateY(0px);
+        box-shadow: none;
+    }
+}

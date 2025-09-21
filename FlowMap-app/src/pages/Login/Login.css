@@ -1,0 +1,128 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 150px;
+    padding: 30px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 30px;
+    border-radius: 20px;
+    width: 530px;
+    background: #ffc0cb;
+    box-shadow: 0 8px 40px #00000045;
+}
+
+.title-login {
+    font-size: 1.7rem;
+    font-weight: 1000;
+    color: #131126;
+}
+
+.user-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & label {
+        text-align: start;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 5px 10px;
+    }
+
+    & input {
+        font-size: 1rem;
+        padding: 10px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 6px 8px #00000020;
+        background: #F9E6E6;
+        margin-bottom: 5px;
+    }
+}
+
+.button-login {
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2f2b5e;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px #00000018;
+    padding: 10px 30px;
+    background: #f77b39;
+    transition: .2s;
+}
+
+.button-login:hover {
+    background: #fa6d20;
+    box-shadow: 0 6px 8px #00000024;
+}
+
+.content-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+
+    & h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .login-container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .form-login {
+        width: 85vw;
+        max-width: 600px;
+    }
+
+    .content-login {
+        order: -1;
+        width: 85vw;
+        max-width: 500px;
+
+        & img {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .form-login {
+        padding: 30px 20px;
+    }
+
+    .user-login label {
+        font-size: 0.8rem;
+    }
+
+    .user-login input {
+        font-size: 0.8rem;
+    }
+
+    .button-login {
+        font-size: 0.9rem;
+    }
+
+    .title-login {
+        font-size: 1.4rem;
+    }
+
+    .content-login h1 {
+        font-size: 1.35rem;
+    }
+}
